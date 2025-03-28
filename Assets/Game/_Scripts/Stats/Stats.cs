@@ -1,4 +1,5 @@
 ﻿using Photon.Pun;
+using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
@@ -6,23 +7,32 @@ using UnityEngine.UI;
 public class Stats : MonoBehaviour, IPunObservable
 {
     [SerializeField] protected PhotonView photonView;
+    
+    [Header("Health")]
     [SerializeField] protected float maxHealth;
-    [SerializeField] protected float currentHealth;
+    [SerializeField] protected float currentHealth;  
     [SerializeField] protected Image fill;
-
+    
+    [Header("Exp")]    
     [SerializeField] protected int level;
-    [SerializeField] protected int exp;
     [SerializeField] protected int maxExp;
+    [SerializeField] protected int exp;
     [SerializeField] protected TextMeshProUGUI levelText;
+    
+    [Header("Damage")]
+    [SerializeField] protected int damage = 10;
 
     public float Maxhealth => maxHealth;
     public float CurrentHealth => currentHealth;
+    public int Damage => damage;
 
-    protected virtual void Start()
+    protected virtual void OnEnable()
     {
         if(!photonView.IsMine)
             currentHealth = maxHealth;
     }
+
+    #region Damage
     public void TakeDamage(float damage)
     {
         if (!photonView.IsMine) return;
@@ -37,6 +47,8 @@ public class Stats : MonoBehaviour, IPunObservable
         currentHealth -= damage;
         UpdateHealthBar();
     }
+    #endregion
+    #region Health
     public void AddHealth(float health)
     {
         if (!photonView.IsMine) return;
@@ -58,9 +70,16 @@ public class Stats : MonoBehaviour, IPunObservable
     public void RPC_HealthLevelUp()
     {
         maxHealth = Mathf.CeilToInt(maxHealth * level * 1.3f);
+        damage = Mathf.CeilToInt(damage * level * 1.3f);
         currentHealth = maxHealth;
         UpdateHealthBar();
     }
+    public void HealthReborn()
+    {
+        currentHealth = 0;
+    }
+    #endregion
+    #region EXP
     public void AddExp(int exp)
     {
         if (!photonView.IsMine) return;
@@ -78,7 +97,7 @@ public class Stats : MonoBehaviour, IPunObservable
             LevelUp();
         }
     }
-    private void LevelUp()
+    protected virtual void LevelUp()
     {
         this.exp -= maxExp;
         level++;
@@ -86,6 +105,7 @@ public class Stats : MonoBehaviour, IPunObservable
         HealthLevelUp();
         UpdateLevel();
     }
+    #endregion
     #region GUI
     protected void UpdateLevel()
     {
@@ -115,7 +135,7 @@ public class Stats : MonoBehaviour, IPunObservable
         fill.fillAmount = targetFill;
     }
 
-    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+    public virtual void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {
         if (stream.IsWriting)
         {

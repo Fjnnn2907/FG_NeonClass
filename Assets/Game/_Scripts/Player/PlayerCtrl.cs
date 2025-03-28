@@ -1,9 +1,11 @@
-using Photon.Pun;
+﻿using Photon.Pun;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static Cinemachine.DocumentationSortingAttribute;
+using WebSocketSharp;
 
-public class PlayerCtrl : FinalStateMachine
+public class PlayerCtrl : FinalStateMachine//, IPunObservable
 {
     [SerializeField] private float speed = 10f;
     [SerializeField] private PlayerStats playerStats;
@@ -105,15 +107,23 @@ public class PlayerCtrl : FinalStateMachine
     IEnumerator ReSpawner()
     {
         isDie = true;
+        playerStats.HealthReborn();
         PlayAnimation(Tag.DIE);
         yield return new WaitForSeconds(1);
-        playerStats.AddHealth(30);
+
+        playerStats.AddHealth(playerStats.GetPercentHealth(0.3f));
+
         yield return new WaitForSeconds(1);
-        playerStats.AddHealth(30);
-        //PlayAnimation(Tag.DESPAWN);
+
+        playerStats.AddHealth(playerStats.GetPercentHealth(0.3f));
+
+        PlayAnimation(Tag.DESPAWN);
+
         yield return new WaitForSeconds(1);
-        playerStats.AddHealth(40);
+        playerStats.AddHealth(playerStats.GetPercentHealth(0.4f));
         ChangeState(State.Idle);
         isDie = false;
     }
+
+
 }

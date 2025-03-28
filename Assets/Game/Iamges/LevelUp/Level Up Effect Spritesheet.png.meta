@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 26dda104a04613542b2e03c376039479
+guid: ffdcaa64c1e1d2d4c8c33e1346bcc6e7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 80
+  spritePixelsToUnits: 60
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -69,10 +69,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -110,175 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Dead_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 128
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 661e3386c5c7cf84c9d5d1deb9b69e95
-      internalID: 1786665157
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dead_1
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 128
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 86f3f112fe368104fa0ac750342f8b8a
-      internalID: -1710229241
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dead_2
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 128
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d32a5b34ec3fc1748a6516c35cac1be4
-      internalID: 32531490
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dead_3
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 128
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c96d89dbed157bf4198398b35b9e9da0
-      internalID: -1296109206
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dead_4
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 128
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9f81ed2a5b73afa4cb3a00609b9293cc
-      internalID: 986723653
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dead_5
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 128
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7198dbf6f1e0804409703078ecbebbb1
-      internalID: 1907477226
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dead_6
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 128
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9f5d1eaf73ae2ee41a2afee0d34bc7ca
-      internalID: 1074436722
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dead_7
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 16d3f0e367cdf4c4295e17f0e6b46c3c
-      internalID: -1552100601
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dead_8
+      name: Level Up Effect Spritesheet_0
       rect:
         serializedVersion: 2
         x: 128
@@ -292,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a9bda98a71fcc442846635ffcbf2c27
-      internalID: -361549726
+      spriteID: 42957f18313d8134e81dc338e773cf18
+      internalID: 1549097455
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dead_9
+      name: Level Up Effect Spritesheet_1
       rect:
         serializedVersion: 2
         x: 256
@@ -313,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 261de5f0ffa0bb747a756ab67b4771d2
-      internalID: 1163011225
+      spriteID: b7ec52c12121e7c4785345d927008f69
+      internalID: -1356054012
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dead_10
+      name: Level Up Effect Spritesheet_2
       rect:
         serializedVersion: 2
         x: 384
@@ -334,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69b44eabdaefacf4f8806c78926b9340
-      internalID: 2065772945
+      spriteID: 4a666f1ef4763a94baae2747492a08e9
+      internalID: 766230384
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dead_11
+      name: Level Up Effect Spritesheet_3
       rect:
         serializedVersion: 2
         x: 512
@@ -355,14 +187,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9eecd39f55b7edd419a17ab7c041e2ae
-      internalID: 686932689
+      spriteID: 092e947aa9e59344680f33acb9ec5f31
+      internalID: -1654321809
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dead_12
+      name: Level Up Effect Spritesheet_4
       rect:
         serializedVersion: 2
         x: 640
@@ -376,14 +208,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97528f0927860e140ac716242548a078
-      internalID: -533452899
+      spriteID: a6339429f9f75a94b855fdbf00d9c7a1
+      internalID: 1932609450
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dead_13
+      name: Level Up Effect Spritesheet_5
       rect:
         serializedVersion: 2
         x: 768
@@ -397,8 +229,113 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90c9aac0736640242804ffb532a6f65a
-      internalID: -1758752421
+      spriteID: 1a29cc86265839c4d819d4c59c4027f0
+      internalID: 775046911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level Up Effect Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e675acdfd2f74d249b94bd50d8ee5430
+      internalID: 626835459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level Up Effect Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e155165fbd681fd49b6cca6c8ae75c59
+      internalID: 1801446184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level Up Effect Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f603edaaf96a72144b351e6c423dea94
+      internalID: 444053500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level Up Effect Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e50af3c5b03b704095c82a60894baf1
+      internalID: -1449680312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level Up Effect Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13b2c424ae60e1b45a805f1cbb96fa2d
+      internalID: -1307428595
       vertices: []
       indices: 
       edges: []
@@ -414,20 +351,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Dead_0: 1786665157
-      Dead_1: -1710229241
-      Dead_10: 2065772945
-      Dead_11: 686932689
-      Dead_12: -533452899
-      Dead_13: -1758752421
-      Dead_2: 32531490
-      Dead_3: -1296109206
-      Dead_4: 986723653
-      Dead_5: 1907477226
-      Dead_6: 1074436722
-      Dead_7: -1552100601
-      Dead_8: -361549726
-      Dead_9: 1163011225
+      Level Up Effect Spritesheet_0: 1549097455
+      Level Up Effect Spritesheet_1: -1356054012
+      Level Up Effect Spritesheet_10: -1307428595
+      Level Up Effect Spritesheet_2: 766230384
+      Level Up Effect Spritesheet_3: -1654321809
+      Level Up Effect Spritesheet_4: 1932609450
+      Level Up Effect Spritesheet_5: 775046911
+      Level Up Effect Spritesheet_6: 626835459
+      Level Up Effect Spritesheet_7: 1801446184
+      Level Up Effect Spritesheet_8: 444053500
+      Level Up Effect Spritesheet_9: -1449680312
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

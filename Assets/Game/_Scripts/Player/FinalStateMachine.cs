@@ -10,18 +10,17 @@ public class FinalStateMachine : MonoBehaviour
 
     public State currentState = State.None;
 
-    public enum State { None, Idle, Run, Attack, Die }
+    public enum State { None, Idle, Run, Patrol, Attack, Die }
 
     [SerializeField] private GameObject flipGui;
     protected virtual void Init() { }
     protected virtual void FSMUpdate() { }
     protected virtual void FSMFixedUpdate() { }
 
-    private void Start()
+    private void OnEnable()
     {
         Init();
     }
-
     private void Update()
     {
         FSMUpdate();
